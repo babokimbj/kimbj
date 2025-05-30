@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body {
+    background-image: url(https://scontent-icn2-1.xx.fbcdn.net/v/t69.46293-2/491630273_4130649020557164_2083015104928901419_n.?stp=dst-jpg_p480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=942482&_nc_ohc=n74ds-aUMxMQ7kNvwFjdcCj&_nc_oc=AdmhL1UZUtu4gM1fkHUA9U76TtHFRrujlzKdTMwbfnHCL4NuziogGGHbOUZcUormrO0&_nc_zt=28&_nc_ht=scontent-icn2-1.xx&_nc_gid=Ue_K9TXseTKSvaWz5nf3Qw&oh=03_Q7cD2QFYdcQY0dOKyQsI1L6ShiN-FcpkahGJuwcgfthi2FMH9Q&oe=6833E2BD);
+}
+
+
+h1 {
+  margin: 0 auto;
+  font-size: 50px;
+  width: 100px;
+  color: rgba(255, 105, 180, 0.247);
+  transition: color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+}
+
+h1:hover {
+  color: rgba(255, 105, 180, 1);
+  opacity: 1;
+}
+
+/* @keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+} */
+
+img {
+  width: 24%;
+}
+
+/* 회전 애니메이션 정의 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 마우스를 올렸을 때만 회전 */
+img:hover {
+  animation: spin 0.5s linear infinite;
+}
